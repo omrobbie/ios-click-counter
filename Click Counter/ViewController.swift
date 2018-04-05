@@ -34,19 +34,16 @@ class ViewController: UIViewController {
 //        button.addTarget(self, action: #selector(ViewController.incrementCount), for: UIControlEvents.touchUpInside)
     }
     
-    
-    
-    
-    func incrementCount() {
-        self.count += 1
-        self.label.text = "\(self.count)"
-    }
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func incrementCount() {
+        self.count += 1
+        self.label.text = "\(self.count)"
+    }
+    
 
 }
 
